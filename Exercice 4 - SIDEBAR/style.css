@@ -60,5 +60,20 @@ li:hover {
   color: #fcfcfb;
 }
 
+#side-bar.active{
+  left:0;
+}
+.active span{
+  position:absolute;
+}
+.active span:nth-child(1) {
+  transform: rotate(45deg);
+}
+.active span:nth-child(2){
+  opacity: 0;
+}
+.active span:nth-child(3) {
+  transform: rotate(-45deg);
+}
 /* https: //developer.mozilla.org/fr/docs/Web/CSS/General_sibling_combinator */
 
