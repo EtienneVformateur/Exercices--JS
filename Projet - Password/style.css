@@ -87,3 +87,9 @@ button:hover {
 input[type="range"] {
   width: 60%;
 }
+#displayMdp {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.4rem;
+}

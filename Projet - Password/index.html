@@ -9,9 +9,16 @@
   </head>
   <body>
     <div class="app">
-      <h2>Générateur de MDP</h2>
+      <h2 id="displayMdp">Générateur de MDP</h2>
       <div class="taille-container">
-        <input type="range" id="tailleMdp" min="4" max="24" value="8" />
+        <input
+          type="range"
+          id="tailleMdp"
+          min="4"
+          max="24"
+          value="8"
+          oninput="affichageTailleMdp.value = this.value"
+        />
         <input type="text" id="affichageTailleMdp" value="8" readonly />
       </div>
       <div class="checkbox-container">
