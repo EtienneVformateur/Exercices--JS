@@ -1,0 +1,49 @@
+body {
+  min-height: 100vh;
+  overflow: hidden;
+  background: orange;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+section {
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  background-color: teal;
+  padding: 20px;
+  margin: auto;
+  width: 50%;
+  margin-top: 20vh;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+}
+#todoInput {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+#todoInput:focus-visible {
+  outline: none;
+}
+
+ul {
+  text-align: start;
+  color: white;
+}
+
+li {
+  list-style: none;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  width: 200px;
+  padding: 20px;
+}
+li::before {
+  content: "*   ";
+}
+
+.active::before {
+  content: "x   ";
+}
