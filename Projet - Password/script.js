@@ -11,9 +11,10 @@ const genererMdp = () => {
   //SI MINUSCULE EST COCHE
   if (minuscule.checked) {
     //ALORS J'AJOUTE DANS DATA CHAQUE LETTRE MINUSCULE
-    for (let index = 0; index < listeMinuscule.length; index++) {
-      data.push(listeMinuscule[index]);
-    }
+    // for (let index = 0; index < listeMinuscule.length; index++) {
+    //   data.push(listeMinuscule[index]);
+    // }
+    data.push(...listeMinuscule);
   }
   if (majuscule.checked) {
     for (let index = 0; index < listeMajuscule.length; index++) {
